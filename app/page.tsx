@@ -4,7 +4,7 @@ export default function Home() {
       {/* Simple Header */}
       <header className="border-b">
         <div className="container mx-auto px-4 py-4">
-          <div className="text-xl font-semibold">Simple Apps Co.</div>
+          <div className="text-xl font-semibold">Steady Wins Apps.</div>
         </div>
       </header>
 
