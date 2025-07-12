@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Simple Apps Co. - Mobile Apps That Just Work",
+  title: "Steady Wins Apps Co. - Mobile Apps That Just Work",
   description: "We create simple, beautiful mobile apps. Check out our Egg Timer app and upcoming White Noise app.",
 };
 

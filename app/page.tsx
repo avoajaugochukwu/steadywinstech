@@ -80,7 +80,7 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center">
           <div className="mb-4">
             <p className="text-gray-600 dark:text-gray-400">
-              © 2024 Simple Apps Co. All rights reserved.
+              © 2025 Steady Wins Apps Co. All rights reserved.
             </p>
           </div>
           <div className="flex justify-center gap-6 text-sm">
