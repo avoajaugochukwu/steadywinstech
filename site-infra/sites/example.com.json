@@ -1,0 +1,20 @@
+{
+  "domain": "example.com",
+  "subdomains": ["@", "www"],
+  "railway": {
+    "projectId": "PASTE_PROJECT_ID",
+    "environmentId": "PASTE_ENVIRONMENT_ID",
+    "serviceId": "PASTE_SERVICE_ID",
+    "targetPort": null
+  },
+  "email": {
+    "forward": {
+      "hello": "you@your-inbox.com"
+    }
+  },
+  "analytics": {
+    "timeZone": "Etc/UTC",
+    "currency": "USD",
+    "envVar": "NEXT_PUBLIC_GA_ID"
+  }
+}

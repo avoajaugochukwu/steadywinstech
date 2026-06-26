@@ -1,0 +1,12 @@
+.env
+node_modules/
+# Google credentials — SECRET, never commit
+google-sa.json
+*.sa.json
+*-service-account*.json
+google-oauth-client.json
+google-oauth-token.json
+# Keep example.com.json as a template; ignore your real site configs if they contain anything sensitive.
+# (IDs aren't secret, so by default real configs ARE committed. Uncomment to ignore them:)
+# sites/*.json
+# !sites/example.com.json

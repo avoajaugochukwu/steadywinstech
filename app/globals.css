@@ -1,26 +1,65 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --ink: #0a1024;
+  --cobalt: #2540ff;
+  --deep: #0a1f8f;
+  --paper: #ffffff;
+  --mist: #eef1fb;
+  --signal: #e8ff59;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-ink: var(--ink);
+  --color-cobalt: var(--cobalt);
+  --color-deep: var(--deep);
+  --color-paper: var(--paper);
+  --color-mist: var(--mist);
+  --color-signal: var(--signal);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-mono: var(--font-mono);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body), system-ui, sans-serif;
+  font-feature-settings: "ss01", "cv01";
+}
+
+/* Visible keyboard focus on all interactive elements */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--signal);
+  outline-offset: 2px;
+}
+
+/* Steady-line: a dot travelling along the flat signal line */
+.steady-dot {
+  animation: steady-scan 6s linear infinite;
+}
+
+@keyframes steady-scan {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(1200px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .steady-dot {
+    animation: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }

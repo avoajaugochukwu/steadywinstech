@@ -1,0 +1,20 @@
+{
+  "domain": "scribbloo.com",
+  "subdomains": ["@", "www"],
+  "railway": {
+    "projectId": "3d1205f5-7632-4391-a8a1-856ffce178f4",
+    "environmentId": "0a55970a-20fd-4ad0-82aa-562313663a10",
+    "serviceId": "c190d987-cd80-446a-80d7-b65cb1195694",
+    "targetPort": null
+  },
+  "email": {
+    "forward": {
+      "hello": "karlthegoo@hotmail.com"
+    }
+  },
+  "analytics": {
+    "timeZone": "Etc/UTC",
+    "currency": "USD",
+    "envVar": "NEXT_PUBLIC_GA_ID"
+  }
+}

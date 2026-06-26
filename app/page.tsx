@@ -1,93 +1,236 @@
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      {/* Simple Header */}
-      <header className="border-b">
-        <div className="container mx-auto px-4 py-4">
-          <div className="text-xl font-semibold">Steady Wins Apps.</div>
+    <div className="min-h-screen bg-paper text-ink">
+      {/* Header */}
+      <header className="sticky top-0 z-50 border-b border-ink/10 bg-paper">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
+          <a
+            href="#"
+            className="flex items-center gap-2 font-mono text-sm font-bold tracking-[0.15em] text-ink"
+          >
+            <span className="inline-block h-3 w-3 bg-signal" aria-hidden="true" />
+            STEADY WINS®
+          </a>
+          <nav className="flex items-center gap-6">
+            <a
+              href="#catalog"
+              className="hidden font-mono text-xs tracking-[0.15em] text-ink/70 hover:text-ink sm:inline"
+            >
+              APPS
+            </a>
+            <a
+              href="#ethos"
+              className="hidden font-mono text-xs tracking-[0.15em] text-ink/70 hover:text-ink sm:inline"
+            >
+              STUDIO
+            </a>
+            <a
+              href="#"
+              className="bg-cobalt px-4 py-2 font-mono text-xs font-bold tracking-[0.15em] text-paper transition-colors hover:bg-deep"
+            >
+              GET THE APP
+            </a>
+          </nav>
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section className="py-20 text-center">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            We Make Apps
-            <br />
-            That Just Work
-          </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Simple, beautiful mobile apps designed to make your daily life easier. 
-            No bloat, no complexity, just functionality.
-          </p>
-        </div>
-      </section>
-
-      {/* Apps Section */}
-      <section className="py-20 bg-gray-50 dark:bg-gray-900">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Apps</h2>
-          
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* Egg Timer App */}
-            <div className="bg-white dark:bg-black rounded-lg p-8 shadow-sm border">
-              <div className="text-6xl mb-4">🥚</div>
-              <h3 className="text-2xl font-semibold mb-2">Egg Timer</h3>
-              <div className="inline-block px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm mb-4">
-                Available Now
-              </div>
-              <p className="text-gray-600 dark:text-gray-400 mb-6">
-                The perfect timer for cooking eggs exactly how you like them. 
-                Simple interface, reliable timing, perfect results every time.
-              </p>
-              <div className="flex gap-4">
-                <a
-                  href="#"
-                  className="inline-flex items-center px-4 py-2 bg-black dark:bg-white text-white dark:text-black rounded hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors"
-                >
-                  App Store
-                </a>
-                <a
-                  href="#"
-                  className="inline-flex items-center px-4 py-2 bg-black dark:bg-white text-white dark:text-black rounded hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors"
-                >
-                  Google Play
-                </a>
-              </div>
-            </div>
-
-            {/* White Noise App */}
-            <div className="bg-white dark:bg-black rounded-lg p-8 shadow-sm border">
-              <div className="text-6xl mb-4">🌊</div>
-              <h3 className="text-2xl font-semibold mb-2">White Noise</h3>
-              <div className="inline-block px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 rounded-full text-sm mb-4">
-                Coming Soon
-              </div>
-              <p className="text-gray-600 dark:text-gray-400 mb-6">
-                Soothing sounds to help you sleep, focus, or relax. 
-                High-quality audio, simple controls, no distractions.
-              </p>
-              <div className="text-gray-500 dark:text-gray-500">
-                Expected launch: Q2 2024
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Simple Footer */}
-      <footer className="py-12 border-t">
-        <div className="container mx-auto px-4 text-center">
-          <div className="mb-4">
-            <p className="text-gray-600 dark:text-gray-400">
-              © 2025 Steady Wins Technologies Corporation. All rights reserved.
+      <main>
+        {/* Hero */}
+        <section className="bg-cobalt text-paper">
+          <div className="mx-auto flex min-h-[80vh] max-w-6xl flex-col justify-center px-5 py-20 sm:px-8">
+            <p className="font-mono text-xs tracking-[0.15em] text-signal">
+              STEADY WINS TECHNOLOGIES CORP — EST. SMALL
             </p>
+            <h1
+              className="mt-6 max-w-4xl font-display font-bold leading-[0.95] tracking-[-0.04em] text-paper"
+              style={{ fontSize: "clamp(2.5rem, 8vw, 6rem)" }}
+            >
+              Apps that hold steady.
+            </h1>
+            <p className="mt-6 max-w-xl font-body text-lg text-paper/80">
+              We build small, single-purpose mobile apps — then keep them
+              working. No accounts, no clutter, no surprises.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-4">
+              <a
+                href="#"
+                className="bg-signal px-6 py-3 font-mono text-sm font-bold tracking-[0.15em] text-ink transition-opacity hover:opacity-90"
+              >
+                GET EGG TIMER
+              </a>
+              <a
+                href="#catalog"
+                className="border border-paper/60 px-6 py-3 font-mono text-sm font-bold tracking-[0.15em] text-paper transition-colors hover:bg-paper/10"
+              >
+                SEE WHAT&apos;S COMING
+              </a>
+            </div>
+
+            {/* Signature: the steady line */}
+            <div className="mt-16 w-full" aria-hidden="true">
+              <svg
+                viewBox="0 0 1200 60"
+                preserveAspectRatio="none"
+                className="h-12 w-full overflow-visible"
+                role="presentation"
+              >
+                <path
+                  d="M0 30 L380 30 L400 22 L420 30 L760 30 L780 38 L800 30 L1200 30"
+                  fill="none"
+                  stroke="var(--signal)"
+                  strokeWidth="2"
+                  vectorEffect="non-scaling-stroke"
+                />
+                <circle
+                  className="steady-dot"
+                  cx="0"
+                  cy="30"
+                  r="4"
+                  fill="var(--signal)"
+                />
+              </svg>
+            </div>
           </div>
-          <div className="flex justify-center gap-6 text-sm">
-            <a href="#" className="hover:underline">Contact</a>
-            <a href="#" className="hover:underline">Privacy</a>
-            <a href="#" className="hover:underline">Terms</a>
+        </section>
+
+        {/* Ethos strip */}
+        <section id="ethos" className="bg-mist">
+          <div className="mx-auto grid max-w-6xl gap-10 px-5 py-16 sm:grid-cols-3 sm:px-8">
+            <div>
+              <p className="font-mono text-xs tracking-[0.15em] text-cobalt">
+                ONE JOB
+              </p>
+              <p className="mt-3 font-body text-base text-ink">
+                Each app does a single thing, completely.
+              </p>
+            </div>
+            <div>
+              <p className="font-mono text-xs tracking-[0.15em] text-cobalt">
+                NO ACCOUNTS
+              </p>
+              <p className="mt-3 font-body text-base text-ink">
+                No sign-ups, no tracking, no email required.
+              </p>
+            </div>
+            <div>
+              <p className="font-mono text-xs tracking-[0.15em] text-cobalt">
+                STILL HERE
+              </p>
+              <p className="mt-3 font-body text-base text-ink">
+                We maintain what we ship. Updates, not abandonment.
+              </p>
+            </div>
           </div>
+        </section>
+
+        {/* Catalog */}
+        <section id="catalog" className="bg-paper">
+          <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8">
+            <p className="font-mono text-xs tracking-[0.15em] text-ink/60">
+              THE CATALOG
+            </p>
+            <h2 className="mt-3 font-display text-4xl font-bold tracking-[-0.03em] text-ink sm:text-5xl">
+              Two apps. Both honest.
+            </h2>
+
+            <div className="mt-12 grid gap-8 md:grid-cols-2">
+              {/* Egg Timer — LIVE */}
+              <article className="border border-l-4 border-ink/15 border-l-cobalt bg-paper p-8">
+                <div className="flex items-start justify-between">
+                  <span className="font-mono text-3xl font-bold text-ink/30">
+                    01
+                  </span>
+                  <span className="inline-flex items-center gap-2 border border-ink/15 px-3 py-1 font-mono text-xs tracking-[0.15em] text-ink">
+                    <span className="inline-block h-2 w-2 rounded-full bg-signal" />
+                    LIVE
+                  </span>
+                </div>
+                <h3 className="mt-6 font-display text-2xl font-bold tracking-[-0.02em] text-ink">
+                  Egg Timer
+                </h3>
+                <p className="mt-3 font-body text-base text-ink/70">
+                  A precise timer for eggs exactly how you like them. Soft,
+                  medium, hard — pick once, tap, done.
+                </p>
+                <div className="mt-6 flex flex-wrap gap-4">
+                  <a
+                    href="#"
+                    className="border border-ink px-5 py-2 font-mono text-xs font-bold tracking-[0.15em] text-ink transition-colors hover:border-cobalt hover:bg-cobalt hover:text-paper"
+                  >
+                    APP STORE
+                  </a>
+                  <a
+                    href="#"
+                    className="border border-ink px-5 py-2 font-mono text-xs font-bold tracking-[0.15em] text-ink transition-colors hover:border-cobalt hover:bg-cobalt hover:text-paper"
+                  >
+                    GOOGLE PLAY
+                  </a>
+                </div>
+              </article>
+
+              {/* White Noise — SOON */}
+              <article className="border border-ink/15 bg-paper p-8">
+                <div className="flex items-start justify-between">
+                  <span className="font-mono text-3xl font-bold text-ink/30">
+                    02
+                  </span>
+                  <span className="inline-flex items-center gap-2 border border-ink/30 px-3 py-1 font-mono text-xs tracking-[0.15em] text-ink/60">
+                    <span className="inline-block h-2 w-2 rounded-full border border-ink/40" />
+                    SOON
+                  </span>
+                </div>
+                <h3 className="mt-6 font-display text-2xl font-bold tracking-[-0.02em] text-ink">
+                  White Noise
+                </h3>
+                <p className="mt-3 font-body text-base text-ink/70">
+                  Steady, high-quality sound for sleep and focus. Simple
+                  controls, nothing to configure.
+                </p>
+                <p className="mt-6 font-mono text-xs tracking-[0.15em] text-ink/60">
+                  SHIPPING — Q3 2026
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA band */}
+        <section className="bg-cobalt">
+          <div className="mx-auto flex max-w-6xl flex-col items-center px-5 py-20 text-center sm:px-8">
+            <h2 className="max-w-2xl font-display text-4xl font-bold tracking-[-0.03em] text-paper sm:text-5xl">
+              Start with one good app.
+            </h2>
+            <a
+              href="#"
+              className="mt-8 bg-signal px-6 py-3 font-mono text-sm font-bold tracking-[0.15em] text-ink transition-opacity hover:opacity-90"
+            >
+              GET EGG TIMER
+            </a>
+          </div>
+        </section>
+      </main>
+
+      {/* Footer */}
+      <footer className="bg-ink text-paper">
+        <div className="mx-auto flex max-w-6xl flex-col gap-6 px-5 py-12 sm:flex-row sm:items-center sm:justify-between sm:px-8">
+          <div className="flex items-center gap-2 font-mono text-sm font-bold tracking-[0.15em]">
+            <span className="inline-block h-3 w-3 bg-signal" aria-hidden="true" />
+            STEADY WINS®
+          </div>
+          <p className="font-mono text-xs tracking-[0.15em] text-paper/60">
+            © 2026 STEADY WINS TECHNOLOGIES CORPORATION
+          </p>
+          <nav className="flex gap-6 font-mono text-xs tracking-[0.15em] text-paper/80">
+            <a href="#" className="hover:text-signal">
+              Contact
+            </a>
+            <a href="#" className="hover:text-signal">
+              Privacy
+            </a>
+            <a href="#" className="hover:text-signal">
+              Terms
+            </a>
+          </nav>
         </div>
       </footer>
     </div>

@@ -1,0 +1,20 @@
+{
+  "domain": "trowelful.com",
+  "subdomains": ["@", "www"],
+  "railway": {
+    "projectId": "4230f671-0a1d-428f-8c44-cfefa1bf3947",
+    "environmentId": "243698bb-091c-4ac0-bdaf-3f42c1a36d15",
+    "serviceId": "6298bcba-eae0-4396-afb9-2ca91bd02527",
+    "targetPort": null
+  },
+  "email": {
+    "forward": {
+      "hello": "karlthegoo@hotmail.com"
+    }
+  },
+  "analytics": {
+    "timeZone": "Etc/UTC",
+    "currency": "USD",
+    "envVar": "NEXT_PUBLIC_GA_ID"
+  }
+}
