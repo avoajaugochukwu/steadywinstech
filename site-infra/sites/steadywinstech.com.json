@@ -2,9 +2,9 @@
   "domain": "steadywinstech.com",
   "subdomains": ["@", "www"],
   "railway": {
-    "projectId": "d1ef7e22-77f0-4c73-996c-d26b4420fbb6",
-    "environmentId": "1e422dd5-a5c9-47e7-9c22-56c89b910a6e",
-    "serviceId": "120c8272-9596-476f-8bbc-e7bc7ff25fca",
+    "projectId": "45411e90-5e68-4c21-a08c-1416930a7f2e",
+    "environmentId": "2bffa2e4-1494-4590-acc3-067e2037dfb1",
+    "serviceId": "90bd5b56-4208-46c2-a2a5-2344ca53ee02",
     "targetPort": null
   }
 }
